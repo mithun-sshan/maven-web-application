@@ -16,7 +16,6 @@ node
     {
         sh "${mvnhome}/bin/mvn sonar:sonar deploy"
     }
-  
     stage('Deploy into Tomcat')
     {
         sshagent(['fbf1fdae-f20f-4781-b83c-7a9b98e68456'])
